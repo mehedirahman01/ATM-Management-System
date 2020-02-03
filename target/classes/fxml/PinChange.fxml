@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="422.0" prefWidth="546.0" style="-fx-background-color: #024f87;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.atmmanagement.FXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="confirmPinButton" layoutX="203.0" layoutY="268.0" mnemonicParsing="false" onAction="#confirmPinChange" pickOnBounds="false" prefHeight="27.0" prefWidth="85.0" text="Ok">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fill="WHITE" layoutX="175.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Pin">
+         <font>
+            <Font size="39.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="105.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Pin: ">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="oldPin" layoutX="202.0" layoutY="115.0" prefHeight="31.0" prefWidth="196.0" />
+      <Text fill="WHITE" layoutX="98.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Pin:">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="newPin" layoutX="202.0" layoutY="163.0" prefHeight="31.0" prefWidth="196.0" />
+      <Text fill="WHITE" layoutX="25.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm New Pin:" wrappingWidth="156.67236328125">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="confirmNewPin" layoutX="202.0" layoutY="210.0" prefHeight="31.0" prefWidth="196.0" />
+      <Button fx:id="backButton" layoutX="312.0" layoutY="267.0" mnemonicParsing="false" onAction="#backButtonAction" pickOnBounds="false" prefHeight="31.0" prefWidth="85.0" text="Back">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </children>
+</AnchorPane>

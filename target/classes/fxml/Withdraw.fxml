@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="451.0" style="-fx-background-color: #024f87;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.atmmanagement.FXMLController">
+    <children>
+      <TextField fx:id="withdrawAmount" layoutX="183.0" layoutY="152.0" prefHeight="31.0" prefWidth="196.0" />
+      <Text fill="WHITE" layoutX="35.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Amount">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="122.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pin">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="restypeWithdrawButton" layoutX="105.0" layoutY="272.0" mnemonicParsing="false" onAction="#retypeWithdraw" pickOnBounds="false" prefHeight="27.0" prefWidth="88.0" text="Retype">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="confirmWithdrawButton" layoutX="214.0" layoutY="271.0" mnemonicParsing="false" onAction="#confirmWithdraw" pickOnBounds="false" prefHeight="39.0" prefWidth="88.0" text="Confirm">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fill="WHITE" layoutX="158.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw" wrappingWidth="177.7353515625">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="321.0" layoutY="272.0" mnemonicParsing="false" onAction="#backButtonAction" pickOnBounds="false" prefHeight="37.0" prefWidth="74.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <PasswordField fx:id="withdrawPin" layoutX="181.0" layoutY="204.0" prefHeight="31.0" prefWidth="196.0" />
+    </children>
+</AnchorPane>

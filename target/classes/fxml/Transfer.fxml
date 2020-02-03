@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="451.0" style="-fx-background-color: #024f87;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.atmmanagement.FXMLController">
+    <children>
+      <TextField fx:id="transferAmount" layoutX="204.0" layoutY="196.0" prefHeight="31.0" prefWidth="193.0" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Amount">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="146.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pin">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="retypeTransferButton" layoutX="149.0" layoutY="306.0" mnemonicParsing="false" onAction="#retypeTransfer" pickOnBounds="false" text="Retype">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="confirmTransferButton" layoutX="243.0" layoutY="305.0" mnemonicParsing="false" onAction="#confirmTransfer" pickOnBounds="false" text="Confirm">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fill="WHITE" layoutX="146.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRANSFER" wrappingWidth="213.7353515625">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Account">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextField fx:id="toAccount" layoutX="204.0" layoutY="145.0" prefHeight="31.0" prefWidth="193.0" />
+      <Button fx:id="backButton" layoutX="346.0" layoutY="306.0" mnemonicParsing="false" onAction="#backButtonAction" pickOnBounds="false" text="Back">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <PasswordField fx:id="transferPin" layoutX="203.0" layoutY="248.0" prefHeight="31.0" prefWidth="193.0" />
+    </children>
+</AnchorPane>

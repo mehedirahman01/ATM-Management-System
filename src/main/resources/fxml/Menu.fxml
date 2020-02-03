@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="432.0" style="-fx-background-color: #024f87;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.atmmanagement.FXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="withdrawalButton" layoutX="93.0" layoutY="98.0" mnemonicParsing="false" onAction="#withdrawMenu" pickOnBounds="false" prefHeight="40.0" prefWidth="254.0" text="Witdrawal">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pinChangeButton" layoutX="93.0" layoutY="306.0" mnemonicParsing="false" onAction="#changePinMenu" pickOnBounds="false" prefHeight="40.0" prefWidth="254.0" text="Pin Change">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="balanceButton" layoutX="93.0" layoutY="236.0" mnemonicParsing="false" onAction="#showBalance" pickOnBounds="false" prefHeight="40.0" prefWidth="254.0" text="Balance">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="logoutButton" layoutX="93.0" layoutY="374.0" mnemonicParsing="false" onAction="#logoutAction" pickOnBounds="false" prefHeight="40.0" prefWidth="254.0" text="Logout">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="transferButton" layoutX="93.0" layoutY="167.0" mnemonicParsing="false" onAction="#transferMenu" pickOnBounds="false" prefHeight="40.0" prefWidth="254.0" text="Transfer">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fill="WHITE" layoutX="99.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome User" wrappingWidth="253.80810546875">
+         <font>
+            <Font size="37.0" />
+         </font></Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="499.0" style="-fx-background-color: #024f87;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.light.atmmanagement.FXMLController">
+    <children>
+      <TextField fx:id="accountNo" layoutX="195.0" layoutY="152.0" prefHeight="31.0" prefWidth="226.0" />
+      <Text fill="WHITE" layoutX="23.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Account No">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="150.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pin">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="retypeLogin" layoutX="195.0" layoutY="266.0" mnemonicParsing="false" onAction="#retypeLoginAction" prefHeight="21.0" prefWidth="101.0" text="Retype">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="loginButton" layoutX="319.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginAction" pickOnBounds="false" prefHeight="31.0" prefWidth="101.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="status" layoutX="195.0" layoutY="334.0" />
+      <PasswordField fx:id="pin" layoutX="194.0" layoutY="206.0" onAction="#onEnter" prefHeight="31.0" prefWidth="226.0" />
+      <Text fill="WHITE" layoutX="171.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATM SYSTEM" wrappingWidth="243.0029296875">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
